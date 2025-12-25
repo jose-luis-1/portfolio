@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Luis Agamez | Desarrollador de Software Junior</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;background:#0a0e27;color:#fff;overflow-x:hidden}
+
+    .animated-bg{
+      position:fixed;inset:0;z-index:-1;
+      background:linear-gradient(135deg,#0a0e27,#1a1f3a,#0a0e27)
+    }
+    .animated-bg::before{
+      content:'';position:absolute;width:200%;height:200%;
+      background:radial-gradient(circle,rgba(139,92,246,.15) 1px,transparent 1px);
+      background-size:50px 50px;animation:moveGrid 20s linear infinite
+    }
+    @keyframes moveGrid{to{transform:translate(50px,50px)}}
+
+    .container{max-width:1300px;margin:auto;padding:40px}
+
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:60px}
+    .logo{
+      font-size:1.8em;font-weight:800;
+      background:linear-gradient(135deg,#8b5cf6,#ec4899);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent
+    }
+    .nav-links{list-style:none;display:flex;gap:30px}
+    .nav-links a{color:#cbd5e1;text-decoration:none;font-weight:500}
+
+    .hero{display:flex;align-items:center;gap:60px;min-height:80vh}
+    h1{
+      font-size:4em;font-weight:800;
+      background:linear-gradient(135deg,#8b5cf6,#ec4899);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent
+    }
+    .subtitle{font-size:2em;color:#94a3b8;margin:20px 0}
+    .description{margin-bottom:12px;color:#cbd5e1}
+
+    .social-links{margin-top:30px;display:flex;gap:20px;flex-wrap:wrap}
+    .social-btn{
+      padding:12px 24px;border-radius:12px;
+      border:2px solid rgba(139,92,246,.3);
+      background:rgba(139,92,246,.1);
+      color:#fff;text-decoration:none;transition:.3s
+    }
+    .social-btn:hover{transform:translateY(-3px)}
+
+    .hero img{
+      max-width:450px;
+      animation:floatImg 3s ease-in-out infinite
+    }
+    @keyframes floatImg{50%{transform:translateY(-20px)}}
+
+    footer{text-align:center;padding:40px;color:#94a3b8}
+
+    @media(max-width:900px){
+      .hero{flex-direction:column-reverse;text-align:center}
+      h1{font-size:2.8em}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+
+<body>
+<div class="animated-bg"></div>
+
+<div class="container">
+  <nav>
+    <div class="logo">JLA</div>
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Experiencia</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>José Luis<br>Agamez López</h1>
+      <div class="subtitle">Desarrollador de Software Junior</div>
+
+      <p class="description">Experiencia laboral en entornos corporativos</p>
+      <p class="description">Java · Spring Boot · Angular · PostgreSQL</p>
+      <p class="description">📍 Medellín, Colombia</p>
+
+      <div class="social-links">
+        <a class="social-btn" href="mailto:joseluisagamezlopez@gmail.com">Email</a>
+        <a class="social-btn" href="https://github.com/xm8-alt" target="_blank">GitHub</a>
+        <a class="social-btn" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Developer">
+  </section>
+
+  <footer>
+    © 2025 · José Luis Agamez López
+  </footer>
+</div>
+</body>
+</html>
