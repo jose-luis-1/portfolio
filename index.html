@@ -8,6 +8,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+    .glass-card{
+  margin:80px 0;
+  padding:50px;
+  border-radius:20px;
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.1);
+  transition:.3s;
+}
+.glass-card:hover{transform:translateY(-6px)}
+
+.section-title{
+  font-size:2.6em;
+  margin-bottom:35px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.section-title::before{
+  content:'';
+  width:60px;
+  height:5px;
+  background:linear-gradient(90deg,#8b5cf6,#ec4899);
+}
+
+.experience-card{
+  background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(236,72,153,.15));
+  border-left:5px solid #8b5cf6;
+  border-radius:15px;
+  padding:40px;
+}
+.job-title{
+  font-size:1.8em;
+  color:#8b5cf6;
+  font-weight:700;
+}
+.company-info{
+  color:#ec4899;
+  margin-bottom:20px;
+}
+.responsibility{
+  margin-bottom:12px;
+  padding-left:25px;
+  position:relative;
+  color:#cbd5e1;
+}
+.responsibility::before{
+  content:"→";
+  position:absolute;
+  left:0;
+  color:#8b5cf6;
+}
+
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Poppins',sans-serif;background:#0a0e27;color:#fff;overflow-x:hidden}
 
@@ -98,6 +151,49 @@
 
     <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Developer">
   </section>
+  <section class="glass-card">
+  <h2 class="section-title">👤 Perfil Profesional</h2>
+
+  <p class="description">
+    Desarrollador de Software Junior con experiencia en proyectos empresariales,
+    enfocado en el desarrollo de aplicaciones web robustas y escalables.
+  </p>
+
+  <p class="description">
+    Especializado en Java con Spring Boot para backend, Angular para frontend
+    y PostgreSQL como motor de base de datos.
+  </p>
+
+  <p class="description">
+    Comprometido con buenas prácticas de desarrollo, calidad de código y trabajo
+    colaborativo bajo metodologías ágiles como Scrum.
+  </p>
+</section>
+
+<section class="glass-card">
+  <h2 class="section-title">💼 Experiencia Profesional</h2>
+
+  <div class="experience-card">
+    <div class="job-title">Desarrollador de Software Junior</div>
+    <div class="company-info">
+      Tata Consultancy Services (TCS) · 2025
+    </div>
+
+    <div class="responsibility">
+      Desarrollo de funcionalidades frontend utilizando Angular.
+    </div>
+    <div class="responsibility">
+      Creación de APIs REST con Java y Spring Boot.
+    </div>
+    <div class="responsibility">
+      Integración con base de datos PostgreSQL.
+    </div>
+    <div class="responsibility">
+      Trabajo colaborativo bajo metodología Scrum.
+    </div>
+  </div>
+</section>
+
 
   <footer>
     © 2025 · José Luis Agamez López
