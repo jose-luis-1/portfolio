@@ -117,6 +117,36 @@
       h1{font-size:2.8em}
       .nav-links{display:none}
     }
+
+    .skill{
+  margin-bottom:25px;
+}
+.skill span{
+  display:block;
+  margin-bottom:8px;
+  font-weight:500;
+}
+.progress{
+  width:100%;
+  height:12px;
+  background:#1e293b;
+  border-radius:10px;
+  overflow:hidden;
+}
+.progress div{
+  height:100%;
+  background:linear-gradient(90deg,#8b5cf6,#ec4899);
+  border-radius:10px;
+  animation:grow 1.5s ease;
+}
+@keyframes grow{
+  from{width:0}
+}
+
+.cta{
+  text-align:center;
+}
+
   </style>
 </head>
 
@@ -194,6 +224,48 @@
   </div>
 </section>
 
+<section class="glass-card">
+  <h2 class="section-title">🛠️ Habilidades Técnicas</h2>
+
+  <div class="skill">
+    <span>Java / Spring Boot</span>
+    <div class="progress"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Angular / TypeScript</span>
+    <div class="progress"><div style="width:75%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>PostgreSQL</span>
+    <div class="progress"><div style="width:70%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>HTML / CSS</span>
+    <div class="progress"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Git / GitHub</span>
+    <div class="progress"><div style="width:80%"></div></div>
+  </div>
+</section>
+
+<section class="glass-card cta">
+  <h2 class="section-title">🚀 Disponible para oportunidades</h2>
+
+  <p class="description">
+    Abierto a posiciones Junior / Trainee como Desarrollador de Software,
+    con alto interés en seguir creciendo en el ecosistema tecnológico.
+  </p>
+
+  <div class="social-links">
+    <a class="social-btn" href="mailto:joseluisagamezlopez@gmail.com">Contactar</a>
+    <a class="social-btn" href="#" target="_blank">Descargar CV</a>
+  </div>
+</section>
 
   <footer>
     © 2025 · José Luis Agamez López
